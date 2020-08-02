@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    let currentCountry: Country = Country(name:"Malaysia")
     var body: some View {
-        Text("Hello, World!")
+        TrackerView(country:currentCountry)
     }
 }
 

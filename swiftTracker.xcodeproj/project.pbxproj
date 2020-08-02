@@ -19,6 +19,11 @@
 		C5430B4924D5A66700684DB0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B4824D5A66700684DB0 /* ComplicationController.swift */; };
 		C5430B4B24D5A66800684DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5430B4A24D5A66800684DB0 /* Assets.xcassets */; };
 		C5430B4E24D5A66800684DB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5430B4D24D5A66800684DB0 /* Preview Assets.xcassets */; };
+		C5430B6324D5A74500684DB0 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B6224D5A74500684DB0 /* TrackerView.swift */; };
+		C5430B6524D5AD3800684DB0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B6424D5AD3800684DB0 /* Country.swift */; };
+		C5430B6724D5AE6F00684DB0 /* covidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B6624D5AE6F00684DB0 /* covidService.swift */; };
+		C5430B6924D5AEF900684DB0 /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B6824D5AEF900684DB0 /* Covid.swift */; };
+		C5430B6B24D5B08700684DB0 /* CovidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5430B6A24D5B08700684DB0 /* CovidViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		C5430B4D24D5A66800684DB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5430B4F24D5A66800684DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5430B5024D5A66800684DB0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C5430B6224D5A74500684DB0 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		C5430B6424D5AD3800684DB0 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C5430B6624D5AE6F00684DB0 /* covidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covidService.swift; sourceTree = "<group>"; };
+		C5430B6824D5AEF900684DB0 /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		C5430B6A24D5B08700684DB0 /* CovidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +135,10 @@
 		C5430B3D24D5A66700684DB0 /* swiftTracker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C5430B3E24D5A66700684DB0 /* ContentView.swift */,
+				C5430B6124D5A6A100684DB0 /* Models */,
+				C5430B6024D5A69C00684DB0 /* Views */,
+				C5430B5F24D5A69400684DB0 /* View Models */,
+				C5430B5E24D5A68A00684DB0 /* Services */,
 				C5430B4024D5A66700684DB0 /* HostingController.swift */,
 				C5430B4224D5A66700684DB0 /* ExtensionDelegate.swift */,
 				C5430B4424D5A66700684DB0 /* NotificationController.swift */,
@@ -145,6 +158,40 @@
 				C5430B4D24D5A66800684DB0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5430B5E24D5A68A00684DB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C5430B6624D5AE6F00684DB0 /* covidService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5430B5F24D5A69400684DB0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5430B6A24D5B08700684DB0 /* CovidViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C5430B6024D5A69C00684DB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5430B3E24D5A66700684DB0 /* ContentView.swift */,
+				C5430B6224D5A74500684DB0 /* TrackerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5430B6124D5A6A100684DB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5430B6824D5AEF900684DB0 /* Covid.swift */,
+				C5430B6424D5AD3800684DB0 /* Country.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +324,15 @@
 			files = (
 				C5430B4124D5A66700684DB0 /* HostingController.swift in Sources */,
 				C5430B3F24D5A66700684DB0 /* ContentView.swift in Sources */,
+				C5430B6324D5A74500684DB0 /* TrackerView.swift in Sources */,
+				C5430B6724D5AE6F00684DB0 /* covidService.swift in Sources */,
 				C5430B4524D5A66700684DB0 /* NotificationController.swift in Sources */,
+				C5430B6B24D5B08700684DB0 /* CovidViewModel.swift in Sources */,
+				C5430B6524D5AD3800684DB0 /* Country.swift in Sources */,
 				C5430B4324D5A66700684DB0 /* ExtensionDelegate.swift in Sources */,
 				C5430B4724D5A66700684DB0 /* NotificationView.swift in Sources */,
 				C5430B4924D5A66700684DB0 /* ComplicationController.swift in Sources */,
+				C5430B6924D5AEF900684DB0 /* Covid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
